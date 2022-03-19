@@ -1,16 +1,16 @@
 module.exports = [
   { text: '首页',link: '/'},
-  { text: '新手必看', link: '/', items: [
+  { text: '新生必看', link: '/', items: [
     { text: '1', link: '/'},
     { text: '2', link: '/'},
-    { text: '3', link: '/'},
+    { text: '公众号目录', link: '/pages/15c039/'},
    ]
   },
 
   { text: '学习科研', link: '/', items: [
     { text: '图书馆', link: '/'},
     { text: 'CET', link: '/'},
-    { text: '教务相关', link: '/'},
+    { text: '教务相关', link: '/pages/3b059b/'},
    ]
   },
 
