@@ -27,5 +27,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }} # 版本
       - name: run deploy.sh # 步骤3
-          GUIDE_GITHUB_TOKEN: ${{ secrets.GUIDE_GITHUB_TOKEN }} # toKen私密变量
+        env: # 设置环境变量
+          GITHUB_TOKEN: ${{ secrets.GUIDE_GITHUB_TOKEN }} # toKen私密变量
         run: yarn && yarn deploy
