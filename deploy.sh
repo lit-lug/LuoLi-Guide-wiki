@@ -17,7 +17,6 @@ else
   msg='来自github actions的自动部署'
   githubUrl1=https://lit-lug:${GUIDE_GITHUB_TOKEN}@github.com/lit-lug/LuoLi-Guide-wiki.git 
   githubUrl2=https://gaoajia:${GUIDE_GITHUB_TOKEN}@github.com/gaoajia/gh-pages-guode-docs.git
-
   git config --global user.name "gaoajia"
   git config --global user.email "gaoajia@qq.com"
 fi
