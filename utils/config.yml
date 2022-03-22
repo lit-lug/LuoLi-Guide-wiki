@@ -12,3 +12,8 @@ delete:
  # 要添加、修改front matter的数据 （front matter中没有的数据则添加，已有的数据则覆盖）
 data:
   article: false
+  # 禁用指定页面的侧边栏
+  sidebar: false
+  # 最近更新栏
+  
+
