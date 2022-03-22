@@ -28,5 +28,5 @@ jobs:
           node-version: ${{ matrix.node-version }} # 版本
       - name: run deploy.sh # 步骤3
         env: # 设置环境变量
-          GUIDE_WIKI_GITHUB_TOKEN: ${{ secrets.GUIDE_WIKI_GITHUB_TOKEN }} # toKen私密变量
+          GUIDE_WIKI_GITHUB_TOKEN: ${{ secrets.GUIDE_WIKI_GITHUB_TOKEN }} # toKen私密变量 在这里吐槽一下：由于前后变量名不一致，导致 GitHub Action 自动部署 gh-pages 分支的时候，身份验证不通过，TMD我也会犯这种低级错误，醉了！！！
         run: npm install && npm run deploy
