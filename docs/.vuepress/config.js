@@ -2,13 +2,13 @@ const nav = require('./config/nav.js');
 const base = require('../../base.js');
 const htmlModules = require('./config/htmlModules.js');
 const feed_options = {
-  canonical_base: 'https://www.litunix.org',
+  canonical_base: 'https://www.iluoli.ren',
 };
 
 module.exports = {
   title: "洛理指南",
   description: 'Luoyang Institute of Science and Technology Linux User Group',
-  base, // '/<仓库名>/'， 默认'/'
+  base: "/docs/", // '/<仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/64x64.png' }], //favicons，资源放在public文件夹
     ['link', { rel: 'manifest', href: '/manifest.json' }],
