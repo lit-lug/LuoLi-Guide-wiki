@@ -9,14 +9,14 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-if [ -z "$ACCESS_TOKEN" ]; then
+if [ -z "$GUIDE_WIKI_GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl1=git@github.com:lit-lug/LuoLi-Guide-wiki.git
   githubUrl2=git@github.com:gaoajia/gh-pages-guode-docs.git
 else
   msg='来自github actions的自动部署'
-  githubUrl1=https://lit-lug:${ACCESS_TOKEN}@github.com/lit-lug/LuoLi-Guide-wiki.git 
-  githubUrl2=https://gaoajia:${ACCESS_TOKEN}@github.com/gaoajia/gh-pages-guode-docs.git
+  githubUrl1=https://lit-lug:${GUIDE_WIKI_GITHUB_TOKEN}@github.com/lit-lug/LuoLi-Guide-wiki.git 
+  githubUrl2=https://gaoajia:${GUIDE_WIKI_GITHUB_TOKEN}@github.com/gaoajia/gh-pages-guode-docs.git
   git config --global user.name "gaoajia"
   git config --global user.email "gaoajia@qq.com"
 fi
